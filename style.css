@@ -3,13 +3,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-  /* border: 1px solid red; */
 }
 
 :root {
   --textColor: white;
-  --bgUrl: url(./assets/bg-mobile.jpg);
+  --bgUrl: url(./assets/bg-desktop.jpg);
   --strokeColor: rgba(255, 255, 255, 0.3);
   --surfaceColor: rgba(255, 255, 255, 0.1);
   --colorHover: rgba(255, 255, 255, 0.05);
@@ -25,10 +23,6 @@
   --colorHover: rgba(0, 0, 0, 0.1);
   --socialColorHover: rgba(0, 0, 0, 0.1);
   --switchButton: url(./assets/sun.svg);
-}
-
-#botao {
-  border: 1px solid red;
 }
 
 body {
@@ -78,23 +72,22 @@ body * {
 }
 
 @keyframes slideIn {
-    from {
-      left: 0;
-    }
-    to {
-      left: 50%;
-    }
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
 }
 
 @keyframes slideOut {
-    from {
-      left: 50%;
-    }
-    to {
-      left: 0;
-    }
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
 }
-
 
 #switch button {
   width: 32px;
@@ -110,7 +103,6 @@ body * {
   left: 0;
 
   animation: slideOut 0.3s;
-  
 }
 
 .light #switch button {
@@ -155,6 +147,7 @@ ul li a {
   border-radius: 8px;
 
   -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
 
   text-decoration: none;
   font-weight: 500;
@@ -163,8 +156,8 @@ ul li a {
 }
 
 ul li a:hover {
-  /*pseudo-selector, esta sendo usado para alterar a aparencia do botão quando o mouse for passado em cima*/
-  background-color: var(--colorHover);
+  /* pseudo-selector, esta sendo usado para alterar a aparencia do botão quando o mouse for passado em cima*/
+   background-color: var(--colorHover);
   border: 1.5px solid var(--textColor);
 }
 
@@ -198,12 +191,11 @@ p {
   font-size: 14px;
 }
 
-@media (min-width:700px) {
+/* ;@media (min-width: 700px) {
   --root {
     --bg-url: url(./assets/bg-desktop.jpg);
-    }
+  }
 
-    .light {
-      --bg-url:url(./assets/bg-desktop-light.jpg);
-    }
-}
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  } */
