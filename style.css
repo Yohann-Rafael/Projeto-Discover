@@ -39,6 +39,7 @@ body {
 
   background: var(--bgUrl) no-repeat top center/cover;
   /*Função que adiciona um fundo oriundo de uma imagem, aqui tambem foi utilizando o shorthand ou atalho, é um atalho para todas as propriedades citadas*/
+  height: 100vh;
 }
 
 body * {
@@ -76,6 +77,25 @@ body * {
   padding: 4 px;
 }
 
+@keyframes slideIn {
+    from {
+      left: 0;
+    }
+    to {
+      left: 50%;
+    }
+}
+
+@keyframes slideOut {
+    from {
+      left: 50%;
+    }
+    to {
+      left: 0;
+    }
+}
+
+
 #switch button {
   width: 32px;
   height: 32px;
@@ -88,11 +108,17 @@ body * {
   position: absolute;
   z-index: 1;
   left: 0;
+
+  animation: slideOut 0.3s;
+  
 }
 
 .light #switch button {
-  right: 0;
-  left: initial;
+  animation: slideIn 0.3s forwards;
+}
+
+#switch button:hover {
+  outline: 8px solid var(--socialColorHover);
 }
 
 #switch span {
@@ -170,4 +196,14 @@ p {
   text-align: center;
   padding: 24px 0;
   font-size: 14px;
+}
+
+@media (min-width:700px) {
+  --root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+    }
+
+    .light {
+      --bg-url:url(./assets/bg-desktop-light.jpg);
+    }
 }
