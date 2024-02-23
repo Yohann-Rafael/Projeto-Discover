@@ -5,10 +5,10 @@ function changeMode() {
   const imgProfile = document.querySelector("#profile img")
 
   if (html.classList.contains("light")) {
-    imgProfile.setAttribute ("src","./assets/avatar-light.png")
-    imgProfile.setAttribute ("alt", "Foto do Mayk de óculos escuros")
+    imgProfile.setAttribute("src", "./assets/logoDark.png")
+    imgProfile.setAttribute("alt", "Logo escura Megasult")
   } else {
-    imgProfile.setAttribute("src", "./assets/avatar.png")
-    imgProfile.setAttribute("alt", "Foto do Mayk de óculos")
+    imgProfile.setAttribute("src", "./assets/logo.png")
+    imgProfile.setAttribute("alt", "Logo Megasult")
   }
 }
