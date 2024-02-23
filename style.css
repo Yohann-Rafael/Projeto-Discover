@@ -48,7 +48,8 @@ body * {
 
 #container {
   /*Defini a largura maxima que a caixa que criei tem*/
-  width: 360px;
+  width: 100%;
+  max-width: 588px;
   margin: 56px auto;
   padding: 0 24px;
 }
