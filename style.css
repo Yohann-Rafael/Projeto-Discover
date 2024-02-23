@@ -19,7 +19,7 @@
 
 .light {
   --textColor: black;
-  --bgUrl: url(./assets/bg-mobile-light.jpg);
+  --bgUrl: url(./assets/bg-desktop-light.jpg);
   --strokeColor: rgba(0, 0, 0, 0.5);
   --surfaceColor: rgba(0, 0, 0, 0.05);
   --colorHover: rgba(0, 0, 0, 0.1);
