@@ -28,6 +28,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## Projeto
 
 É um agregador de links para ser utilizado como cartão de visitas online.
+Foi modificado com o tema da empresa onde trabalho atualmente. 
 
 ## Licença
 
